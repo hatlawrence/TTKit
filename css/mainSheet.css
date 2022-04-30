@@ -1,0 +1,255 @@
+@font-face {
+	font-family: 'Lawyer Gothic';
+	src: url('LawyerGothic-Bold.eot');
+	src: local('Lawyer Gothic Bold'), local('LawyerGothic-Bold'),
+		url('LawyerGothic-Bold.eot?#iefix') format('embedded-opentype'),
+		url('LawyerGothic-Bold.woff') format('woff'),
+		url('LawyerGothic-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.navbar {
+    background-color: black;
+}
+
+.siteContainer {
+    background-color: white;
+    
+}
+
+.mainContainer {
+    border: 5px solid black;
+
+}
+
+.secContainer {
+    border: 2px solid black;
+
+}
+
+.blankFill {
+    padding-top: 25px;
+}
+
+.cardImages {
+ 
+    max-width: 125px;
+    
+}
+
+.pageImages {
+ 
+    max-height: 125px;
+    
+}
+
+.cardBackground {
+    background-color: lightgray;
+}
+
+
+.ttButton {
+ margin-top: 15px;
+ background-color: black;
+ border: 2px solid black;
+ color: white;
+ border-radius: 12px;
+ padding-right: 20px;
+ padding-left: 20px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+.ttButton:hover {
+    background-color: gray;
+}
+
+textarea {
+    resize: none;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    font-size: 18px;   
+  }
+
+  @media print{.noprint {display:none;}}
+
+  .qrPubStyles {
+      height: 135px;
+      width: 135px;
+      padding-left: 7px;
+      float: left;
+
+      
+  }
+
+  .qrPrivStyles {
+    height: 135px;
+    width: 135px;
+    float: right;
+    
+}
+
+.tblGenerator {
+    margin: auto;
+    width: 80%;
+
+    border: 14px solid gray;
+
+
+    
+}
+
+
+
+.privTextColored {
+    float: right;
+    color: red;
+    font-family: "Lawyer Gothic", sans-serif;
+    font-size: 8pt;
+
+}
+
+.privText {
+    float: right;
+    font-size: 10pt;
+
+
+}
+
+.privAddText {
+    float: right;
+    font-size: 12pt;
+    max-width:250px;
+    word-wrap:break-word;
+    
+    
+    
+
+
+}
+
+.privHead {
+    float: right;
+    font-size: 12pt;
+    font-family: "Lawyer Gothic", sans-serif;
+
+
+}
+
+.pubTextColored {
+    float: left;
+    color: green;
+    font-family: "Lawyer Gothic", sans-serif;
+    font-size: 8pt;
+}
+
+.pubText{
+    float: left;
+    font-size: 10pt;
+    
+
+}
+
+.pubAddText{
+    float: left;
+    font-size: 12pt;
+    max-width:250px;
+    word-wrap:break-word;
+    
+
+}
+
+.pubHead{
+    float: left;
+    font-size: 12pt;
+    font-family: "Lawyer Gothic", sans-serif;
+
+}
+
+.tblHeadText {
+
+    font-size: 20pt;
+    align-items: center;
+    float: none;
+}
+
+.tblPubTitleRow {
+    background-color: lightgray;
+    height: 70px;
+    
+
+}
+
+.tblPrivTitleRow {
+    background-color: lightgray;
+    height: 70px;
+    border-top:  15px solid gray;
+}
+
+.tblPrivKeyRow {
+
+    
+    background-color: pink;
+    height: 60px;
+    
+}
+
+.tblPubKeyRow {
+
+    height: 60px;
+    background-color: lightgreen
+}
+
+.tblQRRow {
+    height: 175px;
+}
+
+.tblFooterRow {
+    height: 135px;
+    background-color: gray;
+}
+
+.tblMainTitle {
+
+    height: 150px;
+    background-color: gray;
+    font-size: 14pt;
+    font-family: "Lawyer Gothic", sans-serif;
+}
+
+body{
+    -webkit-print-color-adjust:exact;
+  }
+
+  .coinLogo {
+
+    float: right;
+    margin-right: 5px;
+
+  }
+
+  .ttLogo {
+
+    float: left;
+    margin-left: 5px;
+
+
+  }
+
+  .ttgLogo {
+
+    float: right;
+    margin-right: 5px;
+
+  }
+
+  

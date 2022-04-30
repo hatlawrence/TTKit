@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Train Technical Kit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="shortcut icon" href="icon.ico">
+        <link rel="apple-touch-icon" href="img/tt.png">
+
+        <!--my main custom sheet-->
+        <link href="css/mainSheet.css" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        
+
+        <script>
+            if('serviceWorker' in navigator) {
+            navigator.serviceWorker
+               .register('/sw.js')
+               .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
+        
+    </head>
+    <body>
+        
+        
+
+            <nav class="navbar navbar-dark">
+
+                <a class="navbar-brand" href="index.html"><img src="img/tt.png" alt="TT" width="50px"></a>
+    
+    
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#tttcNavBar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse" id="tttcNavBar">
+    
+    
+                  <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html"><b>Home</b></a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+    
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" data-target="#dropMenu">
+                              Tools   
+                          </a>
+    
+                            <div class="dropdown-menu dropdown-menu-right" id="dropMenu">                           
+                              <a class="dropdown-item" href="html/tool.html">Unlocking Tool</a>
+                              <a class="dropdown-item" href="html/ttg.html">TTGen: Basic</a>        
+                              <a class="dropdown-item" href="html/locked.html">TTGen: Locked</a>
+                              <a class="dropdown-item" href="html/offline.html">Download</a>                           
+                          </div>
+    
+                        </li>   
+    
+                        <li>
+                          
+                        </li>
+    
+                  </ul>
+    
+    
+                </div>
+            </nav>
+
+            <div class="blankFill"></div>
+
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="card mx-5 my-5 box-shadow bg-light">
+                            <div class="text-center">
+                                <img src="img/ttg.png" class="card-img-top cardImages" alt="Programming">
+                            </div>
+                          
+                            <div class="card-body">
+                                <p class="card-text text-center">
+                                Generate Basic Wallet
+                                </p>
+                                <div class="text-center">
+                                    <button type="button" class="ttButton" onclick="window.location.href='html/ttg.html';">
+                                    Basic
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mx-5 my-5 box-shadow bg-light">
+                            <div class="text-center">
+                                <img src="img/ttc.png" class="card-img-top cardImages" alt="Programming">
+                            </div>
+                          
+                            <div class="card-body">
+                                <p class="card-text text-center">
+                                Generate Locked Wallet
+                                </p>
+                                <div class="text-center">
+                                    <button type="button" class="ttButton" onclick="window.location.href='html/locked.html';">
+                                    Locked
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="card mx-5 my-5 box-shadow bg-light">
+                            <div class="text-center">
+                                <img src="img/aes.png" class="card-img-top cardImages" alt="Programming">
+                            </div>
+                          
+                            <div class="card-body">
+                                <p class="card-text text-center">
+                                Unlock & Locking Tool
+                                </p>
+                                <div class="text-center">
+                                    <button type="button" class="ttButton" onclick="window.location.href='html/tool.html';">
+                                    Tool
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    
+                </div>
+
+            </div>
+            <div class="blankFill"></div>
+        
+
+        
+
+        
+    </body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>

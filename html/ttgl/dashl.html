@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TT Tools</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!--my main custom sheet-->
+        <link href="../../css/mainSheet.css" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../icon.ico">
+    </head>
+    <body>
+        
+    
+
+            <nav class="navbar navbar-dark">
+
+                <a class="navbar-brand" href="../../index.html"><img src="../../img/tt.png" alt="TT" width="50px"></a>
+    
+    
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#tttcNavBar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse" id="tttcNavBar">
+    
+    
+                  <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="../../index.html"><b>Home</b></a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+    
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" data-target="#dropMenu">
+                              Tools   
+                          </a>
+    
+                            <div class="dropdown-menu dropdown-menu-right" id="dropMenu">                           
+                                <a class="dropdown-item" href="../tool.html">Unlocking Tool</a>
+                                <a class="dropdown-item" href="../ttg.html">TTGen: Basic</a>        
+                                <a class="dropdown-item" href="../locked.html">TTGen: Locked</a>
+                                <a class="dropdown-item" href="../offline.html">Download</a>                   
+                          </div>
+    
+                        </li>   
+    
+                        <li>
+                          
+                        </li>
+    
+                  </ul>
+    
+    
+                </div>
+            </nav>
+
+            <div class="blankFill"></div>
+
+            
+
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <table class="tblGenerator">
+                            <tr class="tblMainTitle">
+                                
+                                <td>
+                                    <img src="../../img/tt.png" height="55" alt="Logo" class="ttLogo">
+           
+                                        <b>
+                                            Dash Paper Wallet
+                                        </b>
+                                    
+                                    
+                                    
+                                    <img src="../../img/dash.png" height="55" alt="Logo" class="coinLogo">
+                                </td>
+                                
+                            </tr>
+                            <tr class="tblPubTitleRow">
+                                <td>
+                                    <p class="pubHead">
+                                        
+                                        <b>
+                                            Public Address:
+                                        </b>
+                                        
+                                    </p>
+                                    
+                                    <br>
+                                    <br>
+                                    
+
+                                    <p class="pubTextColored">
+                                        
+                                        <b>
+                                            (SHARE FOR RECEIVING)
+                                        </b>
+                                    </p>
+                                    
+                                </td>
+                                
+                            </tr>
+            
+                            <tr class="tblPubKeyRow">
+                                <td>
+                                    
+                                    <div class="pubAddText" id="public">(Generate)       
+                                    </div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblQRRow">
+                                <td>
+                                    <div class="blankFill"></div>
+                                    <div id="public_qr" class="qrPubStyles"></div>
+                                    <div class="blankFill"></div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblPrivTitleRow">
+                                <td>
+                                    <p class="privHead">
+                                        <b>
+                                            Private Key:
+                                        </b>
+                                        
+                                    </p>
+
+                                    <br>
+                                    <br>
+
+                                    <p class="privTextColored">
+                                        <b>
+                                            (UNLOCK TO WITHDRAW)
+                                        </b>
+                                        
+
+                                    </p>
+                                    
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblPrivKeyRow">
+                                <td>
+                                    <div id="secret" class="privAddText">(Generate)
+
+                                    </div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblQRRow">
+                                <td>
+                                    <div class="blankFill"></div>
+                                    <div id="secret_qr" class="qrPrivStyles">
+
+                                    </div>
+                                    <div class="blankFill"></div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblFooterRow">
+                                <td>
+                                    <img src="../../img/ttfull.png" height="55" alt="Logo" class="ttLogo">
+                                    <img src="../../img/ttg.png" height="55" alt="Logo" class="ttgLogo">
+                                </td>
+
+                            </tr>
+            
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+                
+
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="noprint">
+                            <label>Password</label>
+                            <br>
+                            <input type="password"
+                            id = userTextPass
+                            value = testtext1/>
+                            <br>
+                            <label>Confirm Password</label>
+                            <br>
+                            <input type="password"
+                            id = userTextPassConfirmation
+                            value = testtext2/>
+                            <br>
+                            <button class="button ttButton" onclick="generate()">Generate</button>
+                            <button class="button ttButton" onclick="window.print()">Print</button>
+                            <button class="button ttButton" onclick="javascript:location.href='../../index.html'">Home</button>
+                        </div>
+                    </div>
+                    <textarea id="userTextMessage" cols="0" rows="0" style="display:none;"></textarea>
+                    <textarea id="userTextEncrypted" cols="0" rows="0"style="display:none;"></textarea>
+
+                </div>
+
+    </body>
+
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bitcoinjs-lib.js"></script>
+<script src="../../js/qrcode.js"></script>
+<script src="../../js/aes.js"></script>
+<script>
+    function 
+    generate(){
+            document.getElementById("public_qr").innerHTML = "";
+            document.getElementById("secret_qr").innerHTML = "";
+                generateKey();
+                encryptText();
+                finish();
+            }
+    function finish() {
+        var pubKeyTwo;
+        var privKeyTwo;
+        document.getElementById("secret").textContent = document.getElementById("userTextEncrypted").value;
+        pubKeyTwo = document.getElementById("public").textContent;
+        privKeyTwo = document.getElementById("secret").textContent;
+        new QRCode(document.getElementById("public_qr"), {text: pubKeyTwo, width: 128, height: 128, correctLevel : QRCode.CorrectLevel.H});
+        new QRCode(document.getElementById("secret_qr"), {text: privKeyTwo, width: 128, height: 128, correctLevel : QRCode.CorrectLevel.H});
+        document.getElementById("userTextMessage").value = "";
+    }
+    function generateKey() {
+    const dash = Bitcoin.networks.bitcoin;
+    dash.pubKeyHash = 0x4c; dash.wif = 0xcc; dash.scriptHash = 0x10;
+    const keyPair = Bitcoin.ECPair.makeRandom();
+    const pubKey = keyPair.getAddress();
+    const privKey = keyPair.toWIF();
+    document.getElementById("public").textContent = pubKey;
+    document.getElementById("userTextMessage").value = privKey;
+    }
+    </script>

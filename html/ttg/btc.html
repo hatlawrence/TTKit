@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TT Tools</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!--my main custom sheet-->
+        <link href="../../css/mainSheet.css" rel="stylesheet">
+
+        <!-- Bootstrap core CSS -->
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../icon.ico">
+    </head>
+    <body onload="generate()">
+        
+    
+
+            <nav class="navbar navbar-dark">
+
+                <a class="navbar-brand" href="../../index.html"><img src="../../img/tt.png" alt="TT" width="50px"></a>
+    
+    
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#tttcNavBar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+    
+                <div class="collapse navbar-collapse" id="tttcNavBar">
+    
+    
+                  <ul class="navbar-nav ml-auto">
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="../../index.html"><b>Home</b></a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+    
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" data-target="#dropMenu">
+                              Tools   
+                          </a>
+    
+                            <div class="dropdown-menu dropdown-menu-right" id="dropMenu">                           
+                                <a class="dropdown-item" href="../tool.html">Unlocking Tool</a>
+                                <a class="dropdown-item" href="../ttg.html">TTGen: Basic</a>        
+                                <a class="dropdown-item" href="../locked.html">TTGen: Locked</a>
+                                <a class="dropdown-item" href="../offline.html">Download</a>                   
+                          </div>
+    
+                        </li>   
+    
+                        <li>
+                          
+                        </li>
+    
+                  </ul>
+    
+    
+                </div>
+            </nav>
+
+            <div class="blankFill"></div>
+
+            
+
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <table class="tblGenerator">
+                            <tr class="tblMainTitle">
+                                
+                                <td>
+                                    <img src="../../img/tt.png" height="55" alt="Logo" class="ttLogo">
+           
+                                        <b>
+                                            BTC Paper Wallet
+                                        </b>
+                                    
+                                    
+                                    
+                                    <img src="../../img/btc.png" height="55" alt="Logo" class="coinLogo">
+                                </td>
+                                
+                            </tr>
+                            <tr class="tblPubTitleRow">
+                                <td>
+                                    <p class="pubHead">
+                                        
+                                        <b>
+                                            Public Address:
+                                        </b>
+                                        
+                                    </p>
+                                    
+                                    <br>
+                                    <br>
+                                    
+
+                                    <p class="pubTextColored">
+                                        
+                                        <b>
+                                            (SHARE FOR RECEIVING)
+                                        </b>
+                                    </p>
+                                    
+                                </td>
+                                
+                            </tr>
+            
+                            <tr class="tblPubKeyRow">
+                                <td>
+                                    
+                                    <div class="pubAddText" id="public">Generating...            
+                                    </div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblQRRow">
+                                <td>
+                                    <div class="blankFill"></div>
+                                    <div id="public_qr" class="qrPubStyles"></div>
+                                    <div class="blankFill"></div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblPrivTitleRow">
+                                <td>
+                                    <p class="privHead">
+                                        <b>
+                                            Private Key:
+                                        </b>
+                                        
+                                    </p>
+
+                                    <br>
+                                    <br>
+
+                                    <p class="privTextColored">
+                                        <b>
+                                            (SWEEP TO WITHDRAW)
+                                        </b>
+                                        
+
+                                    </p>
+                                    
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblPrivKeyRow">
+                                <td>
+                                    <div id="secret" class="privAddText">Generating...
+
+                                    </div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblQRRow">
+                                <td>
+                                    <div class="blankFill"></div>
+                                    <div id="secret_qr" class="qrPrivStyles">
+
+                                    </div>
+                                    <div class="blankFill"></div>
+                                </td>
+                                
+                            </tr>
+
+                            <tr class="tblFooterRow">
+                                <td>
+                                    <img src="../../img/ttfull.png" height="55" alt="Logo" class="ttLogo">
+                                    <img src="../../img/ttg.png" height="55" alt="Logo" class="ttgLogo">
+                                </td>
+
+                            </tr>
+            
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+                
+
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <div class="noprint">
+                            <button class="button ttButton" onclick="generate()">Generate</button>
+                            <button class="button ttButton" onclick="window.print()">Print</button>
+                            <button class="button ttButton" onclick="javascript:location.href='../../index.html'">Home</button>
+                        </div>
+                    </div>
+
+                </div>
+
+    </body>
+
+</html>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/popper.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/bitcoinjs-lib.js"></script>
+<script src="../../js/qrcode.js"></script>
+<script>
+    function generate() {
+    const keyPair = Bitcoin.ECPair.makeRandom();
+    const pubKey = keyPair.getAddress();
+    const privKey = keyPair.toWIF();
+    document.getElementById("public").textContent = pubKey;
+    document.getElementById("secret").textContent = privKey;
+    document.getElementById("public_qr").textContent = "";
+    document.getElementById("secret_qr").textContent = "";
+    new QRCode(document.getElementById("public_qr"), {text: pubKey, width: 128, height: 128, correctLevel : QRCode.CorrectLevel.H});
+    new QRCode(document.getElementById("secret_qr"), {text: privKey, width: 128, height: 128, correctLevel : QRCode.CorrectLevel.H});}
+</script>
